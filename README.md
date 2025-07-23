@@ -12,3 +12,16 @@ designed for error-free bit extraction in complex domains. Open-sourced under th
 ## Installation
 ```bash
 pip install -r requirements.txt
+
+## Usage
+from src.core.holomorphic_decode import holomorphic_decode_fixed
+
+P_k = 0.707j
+T = 0.5
+depth = 3
+bits = holomorphic_decode_fixed(P_k, T, depth)
+
+
+print(bits)  # [1, 0, 1]
+
+
