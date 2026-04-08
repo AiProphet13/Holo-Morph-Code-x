@@ -1,4 +1,8 @@
-from src.core.holomorphic_decode import holomorphic_decode_fixed
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from core.holomorphic_decode import holomorphic_decode_fixed
 
 def main():
     P_k = 0.707j
